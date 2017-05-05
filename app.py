@@ -16,7 +16,7 @@ with open('config.yaml') as fh:
 
 ROUTE_SERVER_IP= config['route_server']
 ROUTE_SERVER_USERNAME=config['username']
-ROUTER_SERER_PASSWORD=['password']]
+ROUTER_SERER_PASSWORD=['password']
 
 def find_vrfs_with_prefix(prefix):
     """
