@@ -10,9 +10,13 @@ from flask_restful import Resource, Api
 app = Flask(__name__)
 app.secret_key = "qsdlkfjasdlkfjawlk4j324lj2wlkrfjasdlkfjsa"
 api = Api(app)
-ROUTE_SERVER_IP='192.168.51.128'
-ROUTE_SERVER_USERNAME='admin'
-ROUTER_SERER_PASSWORD='c!sco123'
+
+with open('config.yaml') as fh:
+    config = yaml.safe_load(fh)
+
+ROUTE_SERVER_IP= config['route_server']
+ROUTE_SERVER_USERNAME=config['username']
+ROUTER_SERER_PASSWORD=['password']]
 
 def find_vrfs_with_prefix(prefix):
     """
