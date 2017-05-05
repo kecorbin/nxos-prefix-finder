@@ -58,6 +58,7 @@ class Nexus(object):
                                                 mac[10:12],
                                                 mac[12:14])
 
+
     def search_for_prefix(self, prefix):
         """
         Find VRF name containing a prefix
@@ -78,3 +79,4 @@ class Nexus(object):
                     vrfs.append(name.text)
 
         return vrfs
+        
