@@ -22,6 +22,7 @@ pycparser==2.17
 pyparsing==2.2.0
 python-dateutil==2.6.0
 pytz==2017.2
+PyYAML==3.12
 six==1.10.0
 Werkzeug==0.12.1
 WTForms==2.1
