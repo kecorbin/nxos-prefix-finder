@@ -6,6 +6,7 @@ from wtforms import StringField
 from wtforms.validators import IPAddress
 import os
 from flask_restful import Resource, Api
+import yaml
 
 app = Flask(__name__)
 app.secret_key = "qsdlkfjasdlkfjawlk4j324lj2wlkrfjasdlkfjsa"
