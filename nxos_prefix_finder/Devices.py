@@ -26,7 +26,7 @@ class Nexus(object):
                                        username=self.user,
                                        password=self.passwd,
                                        hostkey_verify=False,
-                                       device_params={'name': 'nexus'},
+                                       device_params={'name': 'nexus','ssh_subsystem_name' : 'xmlagent'},
                                        allow_agent=False,
                                        look_for_keys=False)
 
@@ -79,4 +79,3 @@ class Nexus(object):
                     vrfs.append(name.text)
 
         return vrfs
-        
