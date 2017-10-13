@@ -4,6 +4,10 @@
 
 This utility provides a flask based website which allows a user to input a IPv4 prefix.  The utility will then establish a NetConf session with an NX-OS device, and report back which VRF(s) the prefix was found in.
 
+## Screenshot
+
+![screenshot](/static/img/screenshot.png)
+
 ## Installation
 
 ```
